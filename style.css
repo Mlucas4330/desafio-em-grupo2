@@ -14,14 +14,14 @@ body {
     z-index: 3;
     bottom: 0;
     animation: batman 5s;
-    
+
 }
 
 .batmovel {
     width: 100vw;
     position: absolute;
     bottom: 0;
-    animation: batmovel 4s;
+    animation: batmovel 5s;
     z-index: 2;
     filter: blur(2px);
 }
@@ -51,6 +51,7 @@ body {
         width: 110vw;
     }
 }
+
 .nome-bat {
     width: 100vw;
     position: absolute;
@@ -90,7 +91,7 @@ body {
         opacity: 0;
         left: -20%;
     }
-    
+
     100% {
         opacity: 1;
         left: 0%;
@@ -102,6 +103,7 @@ body {
         opacity: 0;
         left: -20%;
     }
+
     100% {
         opacity: 1;
     }
@@ -115,7 +117,13 @@ body {
 
 @keyframes batmovel {
     0% {
-        bottom: -40%;
+        right: -30%;
+        bottom: -30%;
+    }
+
+    100% {
+        right: 0%;
+        bottom: 0%;
     }
 }
 
@@ -123,9 +131,11 @@ body {
     0% {
         right: -100%;
     }
+
     50% {
         right: 0%;
     }
+
     100% {
         right: -100%;
     }
@@ -133,11 +143,10 @@ body {
 
 @keyframes chuva {
     0% {
-        left: -100%;
         top: -100%;
     }
+
     100% {
-        left: 40%;
         top: 40%;
     }
 }
