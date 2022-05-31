@@ -1,0 +1,209 @@
+@import url('http://www.dismantledestroy.com/?product=i-know-a-ghost');
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.batman {
+    width: 100vw;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    animation: batman 5s;
+    
+}
+
+.batmovel {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    animation: batmovel 4s;
+    z-index: 2;
+    filter: blur(2px);
+}
+
+.chuva {
+    height: 100vh;
+    position: absolute;
+    opacity: 0.2;
+    z-index: 1;
+    animation: chuva 30s infinite;
+}
+
+.fundo {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    filter: blur(2px);
+    animation: zoom 15s;
+}
+
+@keyframes zoom {
+    0% {
+        width: 100vw;
+    }
+
+    100% {
+        width: 110vw;
+    }
+}
+.nome-bat {
+    width: 100vw;
+    position: absolute;
+    animation: lancamentoh1 3s;
+    z-index: 100;
+}
+
+.smoke1 {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    filter: blur(40px);
+    animation: smoke 60s infinite;
+}
+
+
+.flare {
+    position: absolute;
+    width: 100vw;
+}
+
+.lancamento {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-family: 'I KNOW A GHOST';
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgb(131, 14, 14);
+    animation: lancamentop 3s;
+    z-index: 2;
+}
+
+@keyframes lancamentoh1 {
+    0% {
+        opacity: 0;
+        left: -20%;
+    }
+    
+    100% {
+        opacity: 1;
+        left: 0%;
+    }
+}
+
+@keyframes lancamentop {
+    0% {
+        opacity: 0;
+        left: -20%;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes batman {
+    0% {
+        bottom: -30%;
+    }
+}
+
+@keyframes batmovel {
+    0% {
+        bottom: -40%;
+    }
+}
+
+@keyframes smoke {
+    0% {
+        right: -100%;
+    }
+    50% {
+        right: 0%;
+    }
+    100% {
+        right: -100%;
+    }
+}
+
+@keyframes chuva {
+    0% {
+        left: -100%;
+        top: -100%;
+    }
+    100% {
+        left: 40%;
+        top: 40%;
+    }
+}
+
+/* body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+img {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.one {
+    z-index: 100;
+}
+
+.two {
+    z-index: 99;
+}
+
+.thre {
+    z-index: 98;
+}
+
+.four {
+    z-index: 97;
+}
+
+.five {
+    z-index: 96;
+}
+
+.six {
+    z-index: 95;
+}
+
+.seven {
+    z-index: 94;
+}
+
+.eight {
+    z-index: 93;
+}
+
+.nine {
+    z-index: 92;
+}
+
+.ten {
+    z-index: 91;
+}
+
+.eleven {
+    z-index: 90;
+}
+
+.twelve {
+    z-index: 89;
+}
+
+.treze {
+    z-index: 88;
+} */
